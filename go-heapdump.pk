@@ -18,9 +18,9 @@
 // The format is documented in
 // https://github.com/golang/go/wiki/heapdump15-through-heapdump17
 
-// Numeric values written by WriteHeapDump uses a format compatible with
-// [1]encoding/binary, which reuses the [2]Protocol Buffers' varints. It is
-// explicitly stated, but the format is compatible with LEB128.
+// Numeric values written by WriteHeapDump use a format compatible with
+// [1]encoding/binary, which reuses the [2]Protocol Buffers' varints. It
+// is not explicitly stated, but the format is compatible with LEB128.
 //
 // [1]: https://pkg.go.dev/encoding/binary
 // [2]: https://developers.google.com/protocol-buffers/docs/encoding#varints
@@ -50,7 +50,7 @@ var GHD_TAG_PANIC            = 15;
 var GHD_TAG_MEM_PROF         = 16;
 var GHD_TAG_ALLOC_SAMPLE     = 17;
 
-// Maximum number of types to print in a string.
+// Maximum number of bytes to print from a string.
 var GHD_STRINGS_PRINT_LIMIT = 32;
 
 type GHD_String =
