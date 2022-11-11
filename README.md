@@ -1,3 +1,8 @@
+⚠ This repository is archived. The implementation is now hosted in
+the [pickles repository](https://github.com/ayosec/pickles).
+
+---
+
 # go-heapdump for GNU Poke
 
 Pickle for [GNU poke][poke] 2.0 or later to read [heap-dumps for Go programs][heapdump].
